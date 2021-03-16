@@ -1,0 +1,46 @@
+package shuixianhua;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class hello {
+
+	private static Object scan;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan=new Scanner(System.in);
+		System.out.println("输入l(3<=l<=7):");
+		int l=scan.nextInt();
+		
+		
+		for (int k = 3; k <= l; k++){
+			for (int i = (int) 
+					Math.pow(10, k - 1);
+					i < Math.pow(10, k); i++) 
+			{      int sum = 0; 
+			       int num = 0;     
+			       int array[] = new int[k];  
+			       for (int j = 0; j < k; j++)    
+			       {       array[j] = i / (int) Math.pow(10, j) % 10; 
+			       sum += Math.pow(array[j], k);   
+			       num += array[j] * Math.pow(10, j);   
+			       }     
+			       if (sum == num)    
+			       {     
+			    	   System.out.print(num + " ");    
+			    	   } 
+			       } 
+			}  
+		 
+
+			
+			
+
+			 
+	}
+}
+			
+			
+
